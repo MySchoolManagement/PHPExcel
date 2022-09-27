@@ -639,8 +639,8 @@ class PHPExcel_Shared_String
 
     public static function mb_str_split($string)
     {
-        # Split at all position not after the start: ^
-        # and not before the end: $
+        // Split at all position not after the start: ^
+        // and not before the end: $
         return preg_split('/(?<!^)(?!$)/u', $string);
     }
 
